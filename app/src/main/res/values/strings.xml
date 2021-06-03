@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">Healthy Care</string>
+    <string name="diagnosa">Diagnosa</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+    <string name="penyakit">Penyakit</string>
+    <string name="gejala">Gejala</string>
+    <string name="info">Info</string>
+    <string name="silahkan_konsultasi">Silahkan konsultasi</string>
+    <string name="gejala_yang_anda_alami">Gejala yang anda alami</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="tittle_diagnosa">Diagnosa</string>
+    <string name="tittle_penyakit">Penyakit</string>
+    <string name="tittle_info">Info</string>
+    <string name="jarak_meter">jarak meter</string>
+
+    <string name="start_Lat">-6.201902</string>
+    <string name="start_Long">106.7808273</string>
+    <string name="km">Km</string>
+
+    <string name="URL">https://asia-southeast2-rational-logic-308203.cloudfunctions.net/model-caller-py</string>
+    <string name="rute">Rute</string>
+
+    <string name="moto">"We want to make sure everyone gets his/her hospital"</string>
+    <string name="background">People who need urgent treatment are at a huge disadvantage in cases like this, leaving them to go to the hospital without being guaranteed an empty room.
+        To overcome this, we created an application that can predict the disease from the symptoms experienced and then recommend it to the nearest hospital.
+        This is expected to increase efficiency in finding a hospital with guaranteed room availability.</string>
+    <string name="background_info">Background</string>
+
+    <string-array name="Gejala">
+        <item>gatal</item>
+        <item>ruam kulit</item>
+        <item>erupsi kulit nodal</item>
+        <item>bersin terus menerus</item>
+        <item>gemetaran</item>
+        <item>panas dingin</item>
+        <item>nyeri sendi</item>
+        <item>sakit perut</item>
+        <item>keasaman</item>
+        <item>bisul di lidah</item>
+        <item>pemborosan otot</item>
+        <item>muntah</item>
+        <item>membakar miksi</item>
+        <item>bercak buang air kecil</item>
+        <item>kelelahan</item>
+        <item>penambahan berat badan</item>
+        <item>kegelisahan</item>
+        <item>tangan dan kaki dingin</item>
+        <item>erubahan suasana hati</item>
+        <item>penurunan berat badan</item>
+        <item>kegelisahan</item>
+        <item>kelesuan</item>
+        <item>bercak di tenggorokan</item>
+        <item>kadar gula tidak teratur</item>
+        <item>batuk</item>
+        <item>demam tinggi</item>
+        <item>mata cekung</item>
+        <item>sesak napas</item>
+        <item>berkeringat</item>
+        <item>dehidrasi</item>
+        <item>gangguan pencernaan</item>
+        <item>sakit kepala</item>
+        <item>kulit kekuningan</item>
+        <item>urine berwarna gelap</item>
+        <item>mual</item>
+        <item>kehilangan selera makan</item>
+        <item>sakit di belakang mata</item>
+        <item>sakit punggung</item>
+        <item>sembelit</item>
+        <item>sakit perut</item>
+        <item>diare</item>
+        <item>demam ringan</item>
+        <item>urin kuning</item>
+        <item>menguningnya mata</item>
+        <item>gagal hati akut</item>
+        <item>kelebihan cairan</item>
+        <item>pembengkakan perut</item>
+        <item>pembengkakan kelenjar getah bening</item>
+        <item>rasa tidak enak</item>
+        <item>penglihatan kabur dan terdistorsi</item>
+        <item>dahak</item>
+        <item>iritasi tenggorokan</item>
+        <item>kemerahan pada mata</item>
+        <item>tekanan sinus</item>
+        <item>pilek</item>
+        <item>kemacetan</item>
+        <item>nyeri dada</item>
+        <item>kelemahan di tungkai</item>
+        <item>detak jantung cepat</item>
+        <item>nyeri saat buang air besar</item>
+        <item>nyeri di daerah anus</item>
+        <item>bangku berdarah</item>
+        <item>iritasi di anus</item>
+        <item>sakit leher</item>
+        <item>pusing</item>
+        <item>kram</item>
+        <item>memar</item>
+        <item>kegemukan</item>
+        <item>kaki bengkak</item>
+        <item>pembuluh darah bengkak</item>
+        <item>wajah dan mata bengkak</item>
+        <item>tiroid membesar</item>
+        <item>kuku rapuh</item>
+        <item>ekstremitas bengkak</item>
+        <item>kelaparan yang berlebihan</item>
+        <item>kontak perkawinan ekstra</item>
+        <item>mengeringkan dan kesemutan bibir</item>
+        <item>pidato cadel</item>
+        <item>sakit lutut</item>
+        <item>nyeri sendi pinggul</item>
+        <item>kelemahan otot</item>
+        <item>leher kaku</item>
+        <item>sendi bengkak</item>
+        <item>kekakuan gerakan</item>
+        <item>gerakan berputar</item>
+        <item>kehilangan keseimbangan</item>
+        <item>kegoyangan</item>
+        <item>kelemahan satu sisi tubuh</item>
+        <item>kehilangan bau</item>
+        <item>ketidaknyamanan kandung kemih</item>
+        <item>bau pesing</item>
+        <item>terus menerus merasakan urine</item>
+        <item>bagian gas</item>
+        <item>gatal internal</item>
+        <item>tampilan beracun (typhos)</item>
+        <item>depresi</item>
+        <item>sifat lekas marah</item>
+        <item>nyeri otot</item>
+        <item>sensorium yang diubah</item>
+        <item>bintik-bintik merah di seluruh tubuh</item>
+        <item>sakit perut</item>
+        <item>menstruasi yang tidak normal</item>
+        <item>tambalan dischromic</item>
+        <item>berair dari mata</item>
+        <item>nafsu makan meningkat</item>
+        <item>poliuria</item>
+        <item>sejarah keluarga</item>
+        <item>dahak berlendir</item>
+        <item>dahak berkarat</item>
+        <item>kurang konsenterasi</item>
+        <item>gangguan penglihatan</item>
+        <item>menerima transfusi darah</item>
+        <item>menerima suntikan yang tidak steril</item>
+        <item>koma</item>
+        <item>pendarahan perut</item>
+        <item>distensi perut</item>
+        <item>riwayat konsumsi alkohol</item>
+        <item>kelebihan cairan</item>
+        <item>darah dalam dahak</item>
+        <item>vena menonjol pada betis</item>
+        <item>palpitasi</item>
+        <item>berjalan menyakitkan</item>
+        <item>nanah berisi jerawat</item>
+        <item>komedo</item>
+        <item>mendengkur</item>
+        <item>kulit mengelupas</item>
+        <item>perak seperti debu</item>
+        <item>penyok kecil pada kuku</item>
+        <item>kuku bengkak</item>
+        <item>lepuh</item>
+        <item>kemerahan di sekitar hidung</item>
+        <item>kerak kuning keluar</item>
+    </string-array>
+
+    <string-array name="penyakit_all">
+        <item>Fungal infection</item>
+        <item>Allergy</item>
+        <item>GERD</item>
+        <item>Chronic cholestasis</item>
+        <item>Drug Reaction</item>
+        <item>Peptic ulcer diseae</item>
+        <item>AIDS,Diabetes</item>
+        <item>Gastroenteritis</item>
+        <item>Bronchial Asthma</item>
+        <item>Hypertension</item>
+        <item>Migraine</item>
+        <item>Cervical spondylosis</item>
+        <item>Paralysis (brain hemorrhage)</item>
+        <item>Jaundice,Malaria</item>
+        <item>Chicken pox</item>
+        <item>Dengue</item>
+        <item>Typhoid</item>
+        <item>hepatitis A</item>
+        <item>Hepatitis B</item>
+        <item>Hepatitis C</item>
+        <item>Hepatitis D</item>
+        <item>Hepatitis E</item>
+        <item>Alcoholic hepatitis</item>
+        <item>Tuberculosis</item>
+        <item>Common Cold</item>
+        <item>Pneumonia</item>
+        <item>Dimorphic hemmorhoids(piles)</item>
+        <item>Heart attack</item>
+        <item>Varicose veins</item>
+        <item>Hypothyroidism</item>
+        <item>Hyperthyroidism</item>
+        <item>Hypoglycemia</item>
+        <item>Osteoarthristis</item>
+        <item>Arthritis</item>
+        <item>(vertigo) Paroymsal Positional Vertigo</item>
+        <item>Acne</item>
+        <item>Urinary tract infection</item>
+        <item>Psoriasis</item>
+        <item>Impetigo</item>
+    </string-array>
+
+</resources>
