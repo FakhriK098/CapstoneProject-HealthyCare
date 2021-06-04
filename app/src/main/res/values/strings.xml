@@ -26,6 +26,8 @@
         To overcome this, we created an application that can predict the disease from the symptoms experienced and then recommend it to the nearest hospital.
         This is expected to increase efficiency in finding a hospital with guaranteed room availability.</string>
     <string name="background_info">Background</string>
+    <string name="anda_mengalami">Anda Mengalami</string>
+    <string name="rekomendasi_rumah_sakit">Rekomendasi rumah sakit</string>
 
     <string-array name="Gejala">
         <item>gatal</item>

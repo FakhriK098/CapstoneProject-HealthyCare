@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProjectHealthyCare">
-        <activity android:name=".info.InfoActivity"></activity>
+        <activity android:name=".diagnosa.hasil.HasilDiagnosaActivity"></activity>
+        <activity android:name=".info.InfoActivity" />
         <activity android:name=".rumahsakit.detail.DetailRumahSakitActivity" />
         <activity android:name=".penyakit.PenyakitActivity" />
         <activity android:name=".rumahsakit.RumahSakitActivity" />

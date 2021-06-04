@@ -6,19 +6,11 @@ import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.capstoneprojecthealthycare.R
 import com.example.capstoneprojecthealthycare.data.Penyakit
 import com.example.capstoneprojecthealthycare.databinding.ActivityDiagnosaBinding
-import com.loopj.android.http.AsyncHttpClient
-import com.loopj.android.http.AsyncHttpResponseHandler
-import com.loopj.android.http.RequestParams
-import cz.msebera.android.httpclient.Header
-import java.io.OutputStream
-import java.net.HttpURLConnection
-import java.net.URL
-import java.net.URLConnection
+import com.example.capstoneprojecthealthycare.service.RestApiServices
 
 class DiagnosaActivity : AppCompatActivity() {
 
@@ -61,25 +53,21 @@ class DiagnosaActivity : AppCompatActivity() {
     private fun submitGelaja(listGejala: ArrayList<Penyakit>, gejalaPenyakit: Array<String>) {
         for (i in listGejala.indices){
             for (j in gejalaPenyakit.indices){
-                if (gejalaPenyakit[i].equals(listGejala[i].gejala)){
+                if (gejalaPenyakit[j].equals(listGejala[i].gejala)){
                     index_gejala.set(j,1)
                 }
             }
         }
-//        val cloud : URL = URL(resources.getString(R.string.URL))
-//        val con : URLConnection = cloud.openConnection()
-//        val http : HttpURLConnection = con as HttpURLConnection
-//        http.requestMethod = "POST"
-//        http.setRequestProperty("Content-Type", "application/json; charset=UTF-8")
-//        http.setRequestProperty("Accept", "application/json")
-//        http.doOutput = true
-//
-//        val out : String = "{\"symptoms\""+index_gejala+"\"}"
-//        try {
-//            val os : OutputStream = con.outputStream
-//            val input : ByteArray = out.toByteArray()
-//            os.write(input, 0, input.size)
-//        }catch ()
+        val gejala = index_gejala.toList()
+        val postServices = RestApiServices()
+        postServices.addGejala(gejala){
+            if (it?.symptoms != null){
+                Log.d("berhasil", it.toString())
+            }else{
+                Log.e("gagal", "HAH")
+            }
+        }
+
     }
 
     private fun showGejala(){
