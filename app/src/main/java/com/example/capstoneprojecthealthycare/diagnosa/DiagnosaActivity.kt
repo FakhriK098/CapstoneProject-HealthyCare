@@ -10,7 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.capstoneprojecthealthycare.R
 import com.example.capstoneprojecthealthycare.data.Penyakit
 import com.example.capstoneprojecthealthycare.databinding.ActivityDiagnosaBinding
-import com.example.capstoneprojecthealthycare.service.RestApiServices
+import com.example.capstoneprojecthealthycare.service.*
+import retrofit2.Call
+import retrofit2.Response
+import javax.security.auth.callback.Callback
 
 class DiagnosaActivity : AppCompatActivity() {
 
@@ -45,6 +48,7 @@ class DiagnosaActivity : AppCompatActivity() {
         }
 
         binding.btSubmitPenyakit.setOnClickListener {
+            binding.pbGejala.visibility = View.VISIBLE
             submitGelaja(list_gejala, gejala)
         }
 
@@ -59,14 +63,22 @@ class DiagnosaActivity : AppCompatActivity() {
             }
         }
         val gejala = index_gejala.toList()
-        val postServices = RestApiServices()
-        postServices.addGejala(gejala){
-            if (it?.symptoms != null){
-                Log.d("berhasil", it.toString())
-            }else{
-                Log.e("gagal", "HAH")
+        var gejala_penyakit = Gejala()
+        gejala_penyakit.symptoms = gejala
+        val retro = Retro().getRetroClientInstance().create(PostServices::class.java)
+        retro.addGejala(gejala_penyakit).enqueue(object : retrofit2.Callback<GejalaResponse> {
+            override fun onResponse(call: Call<GejalaResponse>, response: Response<GejalaResponse>) {
+                val hasil = response.body()
+                Log.d("Berhasil", hasil?.hasil.toString())
+                binding.pbGejala.visibility = View.INVISIBLE
             }
-        }
+
+            override fun onFailure(call: Call<GejalaResponse>, t: Throwable) {
+                Log.e("Failed",t.message.toString())
+                binding.pbGejala.visibility = View.INVISIBLE
+            }
+
+        })
 
     }
 

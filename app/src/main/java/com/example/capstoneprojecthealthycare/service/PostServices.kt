@@ -8,6 +8,6 @@ import retrofit2.http.POST
 interface PostServices {
 
     @Headers("Content-Type: application/json")
-    @POST("symptoms")
-    fun addGejala(@Body gejala: List<Int>) : Call<Gejala>
+    @POST("gejala")
+    fun addGejala(@Body gejala: Gejala): Call<GejalaResponse>
 }

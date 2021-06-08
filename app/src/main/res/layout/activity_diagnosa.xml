@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".diagnosa.DiagnosaActivity">
 
-    <TextView
-        android:id="@+id/txt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/silahkan_konsultasi"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="12dp"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <Spinner
-        android:id="@+id/sp_diagnosa"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/txt1"
-        android:layout_margin="12sp"
-        android:spinnerMode="dropdown"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/silahkan_konsultasi"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txt2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sp_diagnosa"
-        android:text="@string/gejala_yang_anda_alami"
-        android:textSize="20sp"
-        android:layout_margin="12dp"
-        android:padding="8dp"
-        android:background="@color/green_500"/>
+        <Spinner
+            android:id="@+id/sp_diagnosa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/txt1"
+            android:layout_margin="12sp"
+            android:spinnerMode="dropdown"/>
 
-    <ProgressBar
-        android:id="@+id/pb_gejala"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
-
-    <ScrollView
-        android:id="@+id/sc1"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_below="@id/txt2"
-        android:layout_margin="12dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_gejala"
+        <TextView
+            android:id="@+id/txt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/item_gejala"/>
-    </ScrollView>
+            android:layout_below="@id/sp_diagnosa"
+            android:text="@string/gejala_yang_anda_alami"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
+            android:padding="8dp"
+            android:background="@color/green_500"/>
 
-    <Button
-        android:id="@+id/bt_submitPenyakit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sc1"
-        android:text="@string/submit"
-        android:background="@drawable/button"
-        android:layout_margin="12dp"/>
+        <ProgressBar
+            android:id="@+id/pb_gejala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
 
-</RelativeLayout>
+        <ScrollView
+            android:id="@+id/sc1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/txt2"
+            android:layout_margin="12dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_gejala"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/bt_submitPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sc1"
+            android:text="@string/submit"
+            android:background="@drawable/button"
+            android:layout_margin="12dp"/>
+    </RelativeLayout>
+
+</ScrollView>
