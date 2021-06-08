@@ -11,12 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProjectHealthyCare">
-        <activity android:name=".diagnosa.hasil.HasilDiagnosaActivity"></activity>
-        <activity android:name=".info.InfoActivity" />
+        <activity android:name=".diagnosa.hasil.HasilDiagnosaActivity"
+            android:parentActivityName=".diagnosa.DiagnosaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".diagnosa.DiagnosaActivity"/>
+        </activity>
+        <activity android:name=".info.InfoActivity"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
         <activity android:name=".rumahsakit.detail.DetailRumahSakitActivity" />
-        <activity android:name=".penyakit.PenyakitActivity" />
-        <activity android:name=".rumahsakit.RumahSakitActivity" />
-        <activity android:name=".diagnosa.DiagnosaActivity" />
+        <activity android:name=".penyakit.PenyakitActivity"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity android:name=".rumahsakit.RumahSakitActivity"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity android:name=".diagnosa.DiagnosaActivity"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
         <activity android:name=".HomeActivity" />
         <activity
             android:name=".splashscreen.spalshscreen"

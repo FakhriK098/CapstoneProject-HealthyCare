@@ -18,7 +18,7 @@
     <string name="start_Long">106.7808273</string>
     <string name="km">Km</string>
 
-    <string name="URL">https://asia-southeast2-rational-logic-308203.cloudfunctions.net/model-caller-py</string>
+    <string name="URL">https://asia-southeast2-rational-logic-308203.cloudfunctions.net/model-caller-py/</string>
     <string name="rute">Rute</string>
 
     <string name="moto">"We want to make sure everyone gets his/her hospital"</string>

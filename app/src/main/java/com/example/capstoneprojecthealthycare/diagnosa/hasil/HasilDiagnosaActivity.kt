@@ -24,6 +24,8 @@ class HasilDiagnosaActivity : AppCompatActivity() {
         binding = ActivityHasilDiagnosaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.tvHasilPenyakit.text = intent.getStringExtra(EXTRA_HASIL)
+
         val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[RumahSakitViewModel::class.java]
         val rumahSakit = viewModel.getRumahSakit()
         showData(rumahSakit)
